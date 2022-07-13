@@ -3,6 +3,7 @@
 # Time : O(n)
 # Space : O(n)
 
+
 def containDuplicate(nums):
 
     # Create a set to store the numbers
@@ -18,5 +19,6 @@ def containDuplicate(nums):
         hashset.add(num)
     return False
 
-nums = [1,2,3,3,4,5,3]
+
+nums = [1, 2, 3, 3, 4, 5, 3]
 print(containDuplicate(nums))

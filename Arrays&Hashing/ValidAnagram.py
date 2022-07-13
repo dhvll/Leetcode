@@ -3,6 +3,7 @@
 # Time = O(n)
 # Space = O(n)
 
+
 def isAnalgram(s, t):
 
     if len((s)) != len((t)):
@@ -15,9 +16,10 @@ def isAnalgram(s, t):
         countS[t[i]] = 1 + countT.get(t[i], 0)
 
     for c in countS:
-        if countS[c] != countT.get(c,0):
+        if countS[c] != countT.get(c, 0):
             return False
     return True
+
 
 s = "anagram"
 t = "nagaram"
